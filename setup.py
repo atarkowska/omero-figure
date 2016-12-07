@@ -65,7 +65,7 @@ class Grunt(Command):
             return
         self.spawn(['grunt', 'jst'])
         self.spawn(['grunt', 'concat'])
-        self.spawn(['grunt', 'jshint', '--force'])
+        self.spawn(['grunt', 'jshint'])
 
 
 cmdclass['grunt'] = Grunt
